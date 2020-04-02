@@ -1,0 +1,95 @@
+.adventege {
+    background-color: @rose;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 225px;
+    top: 0;
+    left: 0;
+    //background-image: url(/img/index-cake-background.png);
+  }
+
+}
+
+.adventege__title {
+  font-family: @playfairdisplay;
+  font-size: 40px;
+  line-height: 1;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  padding-top: 125px;
+  text-align: center;
+}
+
+
+.adventege__subtitle {
+  font-family: @introscript;
+  font-size: 22px;
+  line-height: 1;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.adventege-list {
+  width: 230px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  margin-top: 25px;
+  margin-left: 18px;
+}
+
+.adventege-list__item {
+  font-family: @circe;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1;
+
+  margin-left: 25px;
+  margin-bottom: 31px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.adventege__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 225px;
+  height: 50px;
+
+  font-family: @circe;
+  font-size: 15px;
+  line-height: 1;
+
+  color: @white;
+  background-color: @red;
+
+  border-radius: 25px;
+
+  margin-top: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}

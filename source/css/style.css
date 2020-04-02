@@ -1,0 +1,311 @@
+@font-face {
+  font-family: "Playfairdisplay";
+  src: url("../fonts/playfair/playfairdisplay-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Playfairdisplay";
+  src: url("../fonts/playfair/playfairdisplay-bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Playfairdisplay";
+  src: url("../fonts/playfair/playfairdisplay-italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Playfairdisplay";
+  src: url("../fonts/playfair/playfairdisplay-bolditalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Circe";
+  src: url("../fonts/circe/circe-bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Circe";
+  src: url("../fonts/circe/circe-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "IntroScript";
+  src: url("../fonts/introscript/IntroScriptR-H2Base.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.visually-hidden {
+  font-size: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0, 0, 0, 0);
+}
+/*Шрифты*/
+/*Цвета*/
+/*Ширина устройства*/
+/*Ретина*/
+.wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.wrapper--header {
+  width: 320px;
+  padding: 0;
+}
+.menu-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.menu-list__item {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Circe", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #383838;
+  text-transform: uppercase;
+  background-color: #e7e7e7;
+  text-align: center;
+  border-top: 1px solid #dedede;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.menu-list__item:first-child {
+  border-top: none;
+}
+.main-navigation {
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+}
+.main-navigation__toggle {
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 19px;
+  top: -28px;
+  right: 20px;
+  z-index: 2;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.main-navigation--closed .main-navigation__toggle::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/icon-mobile-menu.svg");
+  background-repeat: no-repeat;
+  top: 1px;
+  right: 0;
+  width: 18px;
+  height: 15px;
+}
+.main-navigation--opened .main-navigation__toggle::before,
+.main-navigation--opened .main-navigation__toggle::after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/icon-close.svg");
+  top: 0;
+  right: 0;
+  width: 19px;
+  height: 19px;
+}
+.main-navigation--opened .main-navigation__toggle:active::before,
+.main-navigation--opened .main-navigation__toggle:active::after {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.main-navigation--closed .menu-list__item {
+  display: none;
+}
+.main-navigation--nojs .main-navigation__toggle {
+  display: none;
+}
+.main-navigation--nojs .site-list__item {
+  display: block;
+}
+.header-logo {
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-bottom: 8px;
+}
+.adventege {
+  background-color: #fbebea;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+.adventege::after {
+  position: absolute;
+  content: "";
+  width: 320px;
+  height: 225px;
+  top: 0;
+  left: 0;
+}
+.adventege__title {
+  font-family: "Playfairdisplay", "Arial", sans-serif;
+  font-size: 40px;
+  line-height: 1;
+  font-weight: bold;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  padding-top: 125px;
+  text-align: center;
+}
+.adventege__subtitle {
+  font-family: "IntroScript", "Arial", sans-serif;
+  font-size: 22px;
+  line-height: 1;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  padding: 0;
+}
+.adventege-list {
+  width: 230px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 25px;
+  margin-left: 18px;
+}
+.adventege-list__item {
+  font-family: "Circe", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1;
+  margin-left: 25px;
+  margin-bottom: 31px;
+}
+.adventege-list__item:last-child {
+  margin-bottom: 0;
+}
+.adventege__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 225px;
+  height: 50px;
+  font-family: "Circe", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 1;
+  color: #ffffff;
+  background-color: #f50049;
+  border-radius: 25px;
+  margin-top: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+.our-cake {
+  background-color: #fbebea;
+}
+.our-cake__title {
+  font-family: "Playfairdisplay", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
+  padding-top: 28px;
+}
+.our-cake-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.our-cake-list__item {
+  position: relative;
+  margin-bottom: 6px;
+}
+.our-cake-list__item:last-child {
+  margin-bottom: 0;
+}
+.our-cake__cake-type {
+  font-family: "Circe", "Arial", sans-serif;
+  font-size: 14px;
+  position: absolute;
+  content: "";
+  top: -5px;
+  left: 10px;
+}
+.our-cake__value-view {
+  font-family: "Circe", "Arial", sans-serif;
+  font-size: 12px;
+  position: absolute;
+  content: "";
+  top: 16px;
+  left: 12px;
+}
+.individual-order {
+  background-color: #fbebea;
+}
+.individual-order__title {
+  width: 200px;
+  font-family: "Playfairdisplay", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 17px;
+  padding-top: 44px;
+}
+.individual-order__subtitle {
+  font-family: "IntroScript", "Arial", sans-serif;
+  font-size: 23px;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
