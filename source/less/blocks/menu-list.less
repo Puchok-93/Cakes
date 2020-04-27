@@ -11,6 +11,7 @@
   font-weight: 400;
   color: @dark-grey;
   text-transform: uppercase;
+  text-decoration: none;
   background-color: @light-grey;
   text-align: center;
 
@@ -21,5 +22,36 @@
 
   &:first-child {
     border-top: none;
+  }
+}
+
+.menu-list__item a {
+  text-decoration: none;
+  width: 100%;
+  display: block;
+}
+
+@media (min-width: @desktop-width) {
+  .menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 6px;
+    margin-left: 3.5%;
+  }
+
+  .menu-list__item {
+    background-color: transparent;
+    color: @dark;
+    font-size: 13px;
+    border: none;
+
+    margin-right: 43px;
+  }
+
+  .menu-list__item a {
+
+    &:hover {
+      color: @red;
+    }
   }
 }

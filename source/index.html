@@ -10,28 +10,34 @@
 
 <body>
   <header>
-    <div class="wrapper wrapper--header">
+  <!--<div class="wrapper wrapper--header">-->
       <a>
-        <img class="header-logo" src="/img/cakes-logo.png">
+        <picture>
+          <source media="(min-width: 1024px)" srcset="img/cakes-logo-desktop.png">
+          <source media="(min-width: 768px)" srcset="img/cakes-logo-tablet.png">
+          <img class="header-logo" src="img/cakes-logo.png" alt="Логотип Cat Energy">
+        </picture>
       </a>
-      <nav class="main-navigation main-navigation--closed main-navigation--nojs">
-        <button type="button" class="main-navigation__toggle">
-          <span class="visually-hidden">Открыть меню</span></button>
+      <nav class="main-navigation main-navigation--closed">
+        <button class="main-navigation__toggle">
+          <span></span>
+        </button>
         <ul class="menu-list">
-          <li class="menu-list__item"><a>Наши торты</a></li>
-          <li class="menu-list__item"><a>Индивидуальный заказ</a></li>
-          <li class="menu-list__item"><a>Отзывы</a></li>
-          <li class="menu-list__item"><a>О нас</a></li>
-          <li class="menu-list__item"><a>Как заказать</a></li>
-          <li class="menu-list__item"><a>Контакты</a></li>
+          <li class="menu-list__item"><a href="#">Наши торты</a></li>
+          <li class="menu-list__item"><a href="#">Индивидуальный заказ</a></li>
+          <li class="menu-list__item"><a href="#">Отзывы</a></li>
+          <li class="menu-list__item"><a href="#">О нас</a></li>
+          <li class="menu-list__item"><a href="#">Как заказать</a></li>
+          <li class="menu-list__item"><a href="#">Контакты</a></li>
         </ul>
+        <a class="header-phone" href="tel:89068999296">+7 906 899 92 96</a>
       </nav>
-    </div>
+     <!--</div>-->
   </header>
 
   <main>
     <section class="adventege">
-      <div class="wrapper">
+      <div class="wrapper wrapper--adventege">
       <h1 class="adventege__title">Торты <br>на заказ</h1>
       <p class="adventege__subtitle">Ручная работа</p>
       <ul class="adventege-list">
@@ -41,7 +47,7 @@
       <a class="adventege__button">Выбрать торт</a>
     </div>
     </section>
-
+<!--
     <section class="our-cake">
       <div class="wrapper">
       <h2 class="our-cake__title">Наши торты</h2>
@@ -278,7 +284,7 @@
 
     <p>© 2018 Cakes</p>
 
-  </footer>
+  </footer>-->
   <script>
     var navMain = document.querySelector('.main-navigation');
 var navToggle = document.querySelector('.main-navigation__toggle');
@@ -288,10 +294,10 @@ navMain.classList.remove('main-navigation--nojs');
 navToggle.addEventListener('click', function () {
   if (navMain.classList.contains('main-navigation--closed')) {
       navMain.classList.remove('main-navigation--closed');
-      navMain.classList.add('main-navigation--opened');
+      navMain.classList.add('main-navigation__toggle--opened');
   } else {
       navMain.classList.add('main-navigation--closed');
-      navMain.classList.remove('main-navigation--opened');
+      navMain.classList.remove('main-navigation__toggle--opened');
     }
 });
   </script>

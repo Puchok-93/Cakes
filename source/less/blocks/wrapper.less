@@ -1,10 +1,21 @@
 .wrapper {
-    width: 280px;
+  &--adventege {
+    display: flex;
+    flex-direction: column;
+    outline: 1px solid red;
+  }
+}
+@media (min-width: @desktop-width) {
+  .wrapper {
+    max-width: 1220px;
     margin: 0 auto;
     padding: 0 20px;
 
-  &--header {
-      width: 320px;
+    outline: 1px solid red;
+    display: flex;
+
+    &--adventege {
       padding: 0;
     }
+  }
 }

@@ -3,3 +3,48 @@
     margin-left: 20px;
     margin-bottom: 8px;
 }
+
+.header-phone {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .header-logo {
+    margin-left: 45px;
+
+    margin-top: 22px;
+    margin-bottom: 17px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  header {
+    background-color: @rose;
+    display: flex;
+    outline: 1px solid red;
+
+    padding-top: 50px;
+  }
+
+  .header-logo {
+    margin-top: 11px;
+    margin-left: 150px;
+  }
+
+  .header-phone {
+    font-family: @circe;
+    font-size: 15px;
+    font-weight: 600;
+    color: @dark;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+
+    margin-left: 15.8%;
+    margin-top: 6px;
+
+    &:hover {
+      color: @red;
+    }
+  }
+}
