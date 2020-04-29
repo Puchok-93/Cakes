@@ -72,7 +72,20 @@ body {
           flex-direction: column;
   outline: 1px solid red;
 }
-@media (min-width: 1024px) {
+.wrapper--our-cake {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+}
+@media (min-width: 1124px) {
   .wrapper {
     max-width: 1220px;
     margin: 0 auto;
@@ -85,6 +98,12 @@ body {
   .wrapper--adventege {
     padding: 0;
   }
+  .wrapper--our-cake {
+    padding: 0;
+  }
+}
+header {
+  background-color: #ffffff;
 }
 .header-logo {
   margin-top: 15px;
@@ -101,7 +120,7 @@ body {
     margin-bottom: 17px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1124px) {
   header {
     background-color: #fbebea;
     display: -webkit-box;
@@ -221,7 +240,7 @@ body {
     background-color: #f50049;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1124px) {
   .main-navigation {
     width: 100%;
     display: -webkit-box;
@@ -269,7 +288,7 @@ body {
   width: 100%;
   display: block;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1124px) {
   .menu-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -291,16 +310,21 @@ body {
   }
 }
 .adventege {
-  position: relative;
   background-color: #fbebea;
-}
-.adventege::after {
-  position: absolute;
-  content: "";
-  width: 320px;
-  height: 225px;
-  top: 0;
-  left: 0;
+  z-index: -1;
+  background-image: url(/img/index-cake-background.png);
+  background-repeat: no-repeat;
+  background-position: center -40px;
+  /*
+  &::after {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 225px;
+    top: -40px;
+    left: center;
+    background-image: url(/img/index-cake-background.png);
+  }*/
 }
 .adventege__title {
   font-family: "Playfairdisplay", "Arial", sans-serif;
@@ -313,6 +337,7 @@ body {
   padding-top: 127px;
   text-align: center;
   letter-spacing: 5px;
+  z-index: 2;
 }
 .adventege__subtitle {
   font-family: "IntroScript", "Arial", sans-serif;
@@ -343,9 +368,25 @@ body {
   line-height: 18px;
   margin-left: 8px;
   margin-bottom: 26px;
+  position: relative;
 }
 .adventege-list__item:last-child {
   margin-bottom: 0;
+}
+.adventege-list__item--ingredients::before,
+.adventege-list__item--delivery::before {
+  position: absolute;
+  content: "";
+  width: 32px;
+  height: 32px;
+  top: 0;
+  left: -42px;
+}
+.adventege-list__item--ingredients::before {
+  background-image: url("/img/icon-ingredients.svg");
+}
+.adventege-list__item--delivery::before {
+  background-image: url("/img/icon-delivery.svg");
 }
 .adventege__button {
   display: -webkit-box;
@@ -372,6 +413,10 @@ body {
   margin-bottom: 20px;
 }
 @media (min-width: 768px) {
+  .adventege {
+    background-image: url(/img/index-cake-background-tablet.png);
+    background-position: right 13px;
+  }
   .adventege__title {
     font-size: 60px;
     line-height: 55px;
@@ -413,6 +458,15 @@ body {
   .adventege-list__item:last-child {
     margin-right: 0;
   }
+  .adventege-list__item--ingredients::before,
+  .adventege-list__item--delivery::before {
+    position: absolute;
+    content: "";
+    width: 54px;
+    height: 54px;
+    top: -13px;
+    left: -67px;
+  }
   .adventege__button {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -424,7 +478,13 @@ body {
     margin-top: 33px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1124px) {
+  .adventege {
+    background-image: url(/img/index-cake-background-desktop.png);
+    background-position: right 5px;
+    min-height: 950px;
+    outline: 1px solid red;
+  }
   .adventege__title {
     font-size: 78px;
     line-height: 70px;
@@ -440,23 +500,40 @@ body {
     margin-left: 0;
     margin-top: 27px;
   }
+  .adventege-list {
+    width: 65%;
+    margin: 0;
+    margin-top: 130px;
+    margin-left: 68px;
+  }
+  .adventege-list__item {
+    width: 20%;
+    margin: 0;
+    margin-top: 12px;
+    margin-right: 10px;
+  }
+  .adventege-list__item:nth-child(2n) {
+    margin-left: 55px;
+  }
+  .adventege-list__item--delivery::before {
+    left: -70px;
+  }
   .adventege__button {
     width: 225px;
     height: 51px;
     margin: 0;
     margin-left: 0;
-    margin-top: 38px;
+    margin-top: 40px;
     -webkit-transition-duration: 0.7s;
             transition-duration: 0.7s;
     cursor: pointer;
-  }
-  .adventege__button:hover {
-    background-color: #ffffff;
-    border-radius: 0;
-    border: 2px solid #f50049;
-    color: #f50049;
-    -webkit-transition-duration: 0.7s;
-            transition-duration: 0.7s;
+    /*&:hover {
+      background-color: @white;
+      border-radius: 0;
+      border: 2px solid @red;
+      color: @red;
+      transition-duration: 0.7s;
+    }*/
   }
 }
 .our-cake {
@@ -470,17 +547,22 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
-  margin-bottom: 35px;
+  margin-bottom: 34px;
   padding-top: 28px;
 }
 .our-cake-list {
   list-style: none;
   margin: 0;
   padding: 0;
+  outline: 1px solid green;
+  display: grid;
+  grid-row-gap: 20px;
 }
 .our-cake-list__item {
+  width: 280px;
+  height: 120px;
   position: relative;
-  margin-bottom: 6px;
+  margin: 0;
 }
 .our-cake-list__item:last-child {
   margin-bottom: 0;
@@ -500,6 +582,84 @@ body {
   content: "";
   top: 16px;
   left: 12px;
+}
+@media (min-width: 768px) {
+  .our-cake-list {
+    display: grid;
+    grid-row-gap: 20px;
+    gap: 20px;
+    grid-template-columns: 236px 236px 236px;
+    grid-template-rows: 184px 184px 184px 184px;
+  }
+  .our-cake-list__item {
+    width: 288px;
+    height: 184px;
+  }
+  .our-cake-list__item:first-child,
+  .our-cake-list__item:last-child {
+    width: 419px;
+    height: 388px;
+  }
+  .our-cake-list__item--classic {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  .our-cake-list__item--muss {
+    grid-column-start: 23;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+  /*
+  .our-cake-list__item--wending {
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }*/
+  /*
+  .our-cake-list__item--man {
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+
+  .our-cake-list__item--woman {
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+
+  .our-cake-list__item--kids {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }*/
+}
+@media (min-width: 1124px) {
+  .our-cake-list {
+    gap: 40px;
+    grid-row-gap: 43px;
+    grid-template-columns: 696px 484px;
+    grid-template-rows: 305px 305px 305px 305px;
+  }
+  .our-cake-list__item {
+    width: 484px;
+    height: 305px;
+  }
+  .our-cake-list__item:first-child,
+  .our-cake-list__item:last-child {
+    width: 696px;
+    height: 653px;
+  }
+  .our-cake-list__item--kids {
+    margin-left: -44%;
+  }
 }
 .individual-order {
   background-color: #fbebea;

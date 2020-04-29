@@ -11,7 +11,7 @@
 
   margin: 0;
   padding: 0;
-  margin-bottom: 35px;
+  margin-bottom: 34px;
   padding-top: 28px;
 }
 
@@ -19,12 +19,20 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  outline: 1px solid green;
+  display: grid;
+  //grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  grid-row-gap: 20px;
+  //min-height: 500px;
 }
 
 
 .our-cake-list__item {
+  width: 280px;
+  height: 120px;
   position: relative;
-  margin-bottom: 6px;
+  margin: 0;
+  //margin-bottom: 6px;
 
   &:last-child {
     margin-bottom: 0;
@@ -49,3 +57,92 @@
   top: 16px;
   left: 12px;
 }
+
+@media (min-width: @tablet-width) {
+
+  .our-cake-list {
+    display: grid;
+    grid-row-gap: 20px;
+    //grid-template-columns: 420px 288px; - рабочий
+    grid-template-columns: 236px 236px 236px;
+    grid-template-rows:  184px 184px 184px 184px;
+  }
+/*
+  .our-cake-list__item {
+    width: 288px;
+    height: 184px;
+
+    &:first-child,
+    &:last-child {
+      width: 419px;
+      height: 388px;
+    }
+  }*/
+
+  .our-cake-list__item--classic {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  .our-cake-list__item--muss {
+    grid-column-start: 23;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+/*
+  .our-cake-list__item--wending {
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }*/
+/*
+  .our-cake-list__item--man {
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+
+  .our-cake-list__item--woman {
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+
+  .our-cake-list__item--kids {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .our-cake-list {
+    gap: 40px;
+    grid-row-gap: 43px;
+    grid-template-columns: 696px 484px;
+    grid-template-rows: 305px 305px 305px 305px;
+  }
+
+  .our-cake-list__item {
+    width: 484px;
+    height: 305px;
+
+    &:first-child,
+    &:last-child {
+      width: 696px;
+      height: 653px;
+    }
+  }
+
+  .our-cake-list__item--kids {
+    margin-left: -44%;
+  }
+}
+*/
