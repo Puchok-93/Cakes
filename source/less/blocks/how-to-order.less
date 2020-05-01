@@ -1,0 +1,83 @@
+.how-to-order {
+    background-color: #e3353d;
+    min-height: 482px;
+    background-image: url("/img/box-mobile.png");
+    background-repeat: no-repeat;
+    background-position: 52% bottom;
+}
+
+.how-to-order__title {
+  font-family: @playfairdisplay;
+  font-size: 24px;
+  line-height: 24px;
+  font-style: normal;
+  text-align: center;
+
+  color: @white;
+
+  margin: 0;
+  margin-top: 32px;
+}
+
+.how-to-order-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 20px;
+}
+
+.how-to-order-list__item {
+  position: relative;
+  margin-left: 40px;
+
+  &::before {
+    position: absolute;
+    content: "1";
+    font-family: @playfairdisplay;
+    font-size: 35px;
+    color: @white;
+
+    top: -15px;
+    left: -20px;
+  }
+
+
+  &--term::before {
+    content: "1";
+  }
+
+  &--delivery-city::before {
+    content: "2";
+    top: -16px;
+    left: -22px;
+  }
+
+  &--delivery-countryside::before {
+    content: "3";
+    top: -19px;
+    left: -21px;
+  }
+}
+
+.how-to-order-list__title {
+  font-family: @circe;
+  font-size: 15px;
+  font-style: normal;
+
+  color: @white;
+
+  margin: 0;
+  margin-top: 12px;
+  margin-left: 8px;
+}
+
+.how-to-order-list__description {
+  font-family: @circe;
+  font-size: 14px;
+  font-style: normal;
+
+  color: @white;
+
+  margin: 0;
+  margin-left: 8px;
+}

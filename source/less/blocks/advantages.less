@@ -1,0 +1,127 @@
+.advantages__title {
+  font-family: @playfairdisplay;
+  font-size: 24px;
+  line-height: 33px;
+  font-style: normal;
+  text-align: center;
+
+  margin: 0;
+  margin-top: 14px;
+}
+
+.advantages__subtitle {
+  font-family: @introscript;
+  font-size: 22px;
+  font-style: normal;
+  text-align: center;
+
+  margin: 0;
+  margin-top: 2px;
+}
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 12px;
+}
+
+.advantages-list__item {
+  outline: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advantages-list__item-title {
+  font-family: @circe;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: bold;
+  text-align: center;
+
+  margin: 0;
+
+  position: relative;
+
+  &--natural {
+    padding-top: 80px;
+    margin-left: -13px;
+  }
+
+  &--natural::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    top: 12px;
+    left: 77px;
+    background-image: url("/img/icon-natural-product.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--fresh {
+    padding-top: 72px;
+    margin-left: -13px;
+  }
+
+  &--fresh::before {
+    position: absolute;
+    content: "";
+    width: 145px;
+    height: 60px;
+    top: 10px;
+    left: 90px;
+    background-image: url("/img/icon-fresh.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.advantages-list__item-subtitle {
+  font-family: @circe;
+  font-size: 14px;
+  line-height: 15px;
+  font-style: normal;
+  text-align: center;
+
+  margin: 0;
+
+  &--natural {
+    width: 95%;
+  }
+
+  &--fresh {
+    width: 85%;
+  }
+}
+
+
+.care__title {
+  font-family: @playfairdisplay;
+  font-size: 24px;
+  line-height: 33px;
+  font-style: normal;
+
+  margin: 0;
+  margin-top: 50px;
+  margin-left: -60px;
+}
+
+.care__subtitle {
+  font-family: @introscript;
+  font-size: 22px;
+  font-style: normal;
+
+  margin: 0;
+  margin-top: 4px;
+  margin-left: -155px;
+}
+
+.care__description {
+  font-family: @circe;
+  font-size: 14px;
+  font-style: normal;
+
+  margin: 0;
+  margin-top: -4px;
+}

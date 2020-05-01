@@ -127,6 +127,29 @@ body {
   outline: 1px solid blue;
   background-color: lightblue;
 }
+.wrapper--how-to-order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+}
+.wrapper--contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 20px;
+}
 @media (min-width: 1220px) {
   .wrapper {
     max-width: 1220px;
@@ -838,7 +861,7 @@ header {
   text-align: center;
   margin: 0;
   margin-top: -6px;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 .response__text {
   width: 85%;
@@ -912,7 +935,7 @@ header {
   background-repeat: no-repeat;
 }
 .about-us__description-block {
-  margin-top: 11px;
+  margin-top: 13px;
   outline: 1px solid red;
 }
 .about-us__description-block h3 {
@@ -948,6 +971,318 @@ header {
 .second-block .about-us__subtitle {
   margin-top: 20px;
   margin-bottom: 10px;
+}
+.about-us__description-block blockquote {
+  font-family: "Playfairdisplay", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  margin: 0;
+  margin-top: 75px;
+  padding-bottom: 75px;
+  position: relative;
+}
+.about-us__description-block blockquote::before {
+  position: absolute;
+  content: "’’";
+  font-family: "Playfairdisplay", "Arial", sans-serif;
+  font-size: 60px;
+  line-height: 87px;
+  color: #ffffff;
+  top: -56px;
+  left: 116px;
+}
+.about-us__description-block blockquote::after {
+  position: absolute;
+  content: "";
+  width: 64px;
+  height: 31px;
+  top: 80px;
+  left: 105px;
+  background-image: url("/img/painting.png");
+}
+.advantages__title {
+  font-family: "Playfairdisplay", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 33px;
+  font-style: normal;
+  text-align: center;
+  margin: 0;
+  margin-top: 14px;
+}
+.advantages__subtitle {
+  font-family: "IntroScript", "Arial", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  text-align: center;
+  margin: 0;
+  margin-top: 2px;
+}
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 12px;
+}
+.advantages-list__item {
+  outline: 1px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.advantages-list__item-title {
+  font-family: "Circe", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  position: relative;
+}
+.advantages-list__item-title--natural {
+  padding-top: 80px;
+  margin-left: -13px;
+}
+.advantages-list__item-title--natural::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 60px;
+  top: 12px;
+  left: 77px;
+  background-image: url("/img/icon-natural-product.svg");
+  background-repeat: no-repeat;
+}
+.advantages-list__item-title--fresh {
+  padding-top: 72px;
+  margin-left: -13px;
+}
+.advantages-list__item-title--fresh::before {
+  position: absolute;
+  content: "";
+  width: 145px;
+  height: 60px;
+  top: 10px;
+  left: 90px;
+  background-image: url("/img/icon-fresh.svg");
+  background-repeat: no-repeat;
+}
+.advantages-list__item-subtitle {
+  font-family: "Circe", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 15px;
+  font-style: normal;
+  text-align: center;
+  margin: 0;
+}
+.advantages-list__item-subtitle--natural {
+  width: 95%;
+}
+.advantages-list__item-subtitle--fresh {
+  width: 85%;
+}
+.care__title {
+  font-family: "Playfairdisplay", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 33px;
+  font-style: normal;
+  margin: 0;
+  margin-top: 50px;
+  margin-left: -60px;
+}
+.care__subtitle {
+  font-family: "IntroScript", "Arial", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  margin: 0;
+  margin-top: 4px;
+  margin-left: -155px;
+}
+.care__description {
+  font-family: "Circe", "Arial", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  margin: 0;
+  margin-top: -4px;
+}
+.how-to-order {
+  background-color: #e3353d;
+  min-height: 482px;
+  background-image: url("/img/box-mobile.png");
+  background-repeat: no-repeat;
+  background-position: 52% bottom;
+}
+.how-to-order__title {
+  font-family: "Playfairdisplay", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-style: normal;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+  margin-top: 32px;
+}
+.how-to-order-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 20px;
+}
+.how-to-order-list__item {
+  position: relative;
+  margin-left: 40px;
+}
+.how-to-order-list__item::before {
+  position: absolute;
+  content: "1";
+  font-family: "Playfairdisplay", "Arial", sans-serif;
+  font-size: 35px;
+  color: #ffffff;
+  top: -15px;
+  left: -20px;
+}
+.how-to-order-list__item--term::before {
+  content: "1";
+}
+.how-to-order-list__item--delivery-city::before {
+  content: "2";
+  top: -16px;
+  left: -22px;
+}
+.how-to-order-list__item--delivery-countryside::before {
+  content: "3";
+  top: -19px;
+  left: -21px;
+}
+.how-to-order-list__title {
+  font-family: "Circe", "Arial", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  color: #ffffff;
+  margin: 0;
+  margin-top: 12px;
+  margin-left: 8px;
+}
+.how-to-order-list__description {
+  font-family: "Circe", "Arial", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  color: #ffffff;
+  margin: 0;
+  margin-left: 8px;
+}
+.contacts__title {
+  font-family: "Playfairdisplay", "Arial", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  text-align: center;
+  margin: 0;
+  margin-top: 32px;
+}
+.contacts__subtitle {
+  font-family: "IntroScript", "Arial", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  text-align: left;
+  margin: 0;
+  margin-top: 6px;
+}
+.contacts-form__form-description {
+  font-family: "Circe", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-style: normal;
+  text-align: left;
+  margin: 0;
+  margin-top: 6px;
+}
+input[type="text"],
+input[type="email"] {
+  width: 96%;
+  height: 47px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  padding-left: 9px;
+  margin-top: 10px;
+}
+textarea {
+  width: 96%;
+  min-height: 108px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  padding-top: 12px;
+  padding-left: 9px;
+  margin-top: 10px;
+}
+input[type="text"]::-webkit-input-placeholder,
+input[type="email"]::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  font-family: "Circe", "Arial", sans-serif;
+  font-size: 14px;
+  opacity: 0.8;
+}
+input[type="text"]::-moz-placeholder,
+input[type="email"]::-moz-placeholder,
+textarea::-moz-placeholder {
+  font-family: "Circe", "Arial", sans-serif;
+  font-size: 14px;
+  opacity: 0.8;
+}
+input[type="text"]:-ms-input-placeholder,
+input[type="email"]:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  font-family: "Circe", "Arial", sans-serif;
+  font-size: 14px;
+  opacity: 0.8;
+}
+input[type="text"]::-ms-input-placeholder,
+input[type="email"]::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+  font-family: "Circe", "Arial", sans-serif;
+  font-size: 14px;
+  opacity: 0.8;
+}
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder {
+  font-family: "Circe", "Arial", sans-serif;
+  font-size: 14px;
+  opacity: 0.8;
+}
+.contacts-form button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 65%;
+  height: 50px;
+  font-family: "Circe", "Arial", sans-serif;
+  font-size: 19px;
+  line-height: 26px;
+  color: #ffffff;
+  background-color: #f50049;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

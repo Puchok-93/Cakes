@@ -71,7 +71,7 @@
 }
 
 .about-us__description-block {
-  margin-top: 11px;
+  margin-top: 13px;
   outline: 1px solid red;
 }
 
@@ -114,4 +114,39 @@
 .second-block .about-us__subtitle {
   margin-top: 20px;
   margin-bottom: 10px;
+}
+
+.about-us__description-block blockquote {
+  font-family: @playfairdisplay;
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  margin: 0;
+  margin-top: 75px;
+  padding-bottom: 75px;
+
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "’’";
+    font-family: @playfairdisplay;
+    font-size: 60px;
+    line-height: 87px;
+    color: @white;
+    top: -56px;
+    left: 116px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 64px;
+    height: 31px;
+    top: 80px;
+    left: 105px;
+    background-image: url("/img/painting.png");
+  }
 }
