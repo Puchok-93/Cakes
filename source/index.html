@@ -54,8 +54,8 @@
         <h2 class="our-cake__title">Наши торты</h2>
         <ul class="our-cake-list">
           <li class="our-cake-list__item our-cake-list__item--classic">
-            <p class="our-cake__cake-type">Классические</p>
-            <p class="our-cake__value-view">24 вида</p>
+            <p class="our-cake__cake-type our-cake__cake-type--classic">Классические</p>
+            <p class="our-cake__value-view our-cake__value-view--classic">24 вида</p>
             <picture>
               <source media="(min-width: 1220px)" srcset="img/classic-cake-desktop.png">
               <source media="(min-width: 768px)" srcset="img/classic-cake-tablet.jpg">
@@ -63,8 +63,8 @@
             </picture>
           </li>
           <li class="our-cake-list__item our-cake-list__item--muss">
-            <p class="our-cake__cake-type">Муссовые</p>
-            <p class="our-cake__value-view">12 видов</p>
+            <p class="our-cake__cake-type our-cake__cake-type--muss">Муссовые</p>
+            <p class="our-cake__value-view our-cake__value-view--muss">12 видов</p>
             <picture>
               <source media="(min-width: 1220px)" srcset="img/muss-cake-desktop.png">
               <source media="(min-width: 768px)" srcset="img/muss-cake-tablet.jpg">
@@ -72,8 +72,8 @@
             </picture>
           </li>
           <li class="our-cake-list__item our-cake-list__item--wending">
-            <p class="our-cake__cake-type">Свадебные</p>
-            <p class="our-cake__value-view">20 видов</p>
+            <p class="our-cake__cake-type our-cake__cake-type--wending">Свадебные</p>
+            <p class="our-cake__value-view our-cake__value-view--wending">20 видов</p>
             <picture>
               <source media="(min-width: 1220px)" srcset="img/wending-cake-desktop.png">
               <source media="(min-width: 768px)" srcset="img/wending-cake-tablet.png">
@@ -82,8 +82,8 @@
           </li>
 
           <li class="our-cake-list__item our-cake-list__item--man">
-            <p class="our-cake__cake-type">Мужчинам</p>
-            <p class="our-cake__value-view">12 видов</p>
+            <p class="our-cake__cake-type our-cake__cake-type--man">Мужчинам</p>
+            <p class="our-cake__value-view our-cake__value-view--man">12 видов</p>
             <picture>
               <source media="(min-width: 1220px)" srcset="img/man-cake-desktop.png">
               <source media="(min-width: 768px)" srcset="img/man-cake-tablet.png">
@@ -91,8 +91,8 @@
             </picture>
           </li>
           <li class="our-cake-list__item our-cake-list__item--woman">
-            <p class="our-cake__cake-type">Женщинам</p>
-            <p class="our-cake__value-view">16 видов</p>
+            <p class="our-cake__cake-type our-cake__cake-type--woman">Женщинам</p>
+            <p class="our-cake__value-view our-cake__value-view--woman">16 видов</p>
             <picture>
               <source media="(min-width: 1220px)" srcset="img/woman-cake-desktop.png">
               <source media="(min-width: 768px)" srcset="img/woman-cake-tablet.png">
@@ -100,8 +100,8 @@
             </picture>
           </li>
           <li class="our-cake-list__item our-cake-list__item--kids">
-            <p class="our-cake__cake-type">Детские</p>
-            <p class="our-cake__value-view">18 видов</p>
+            <p class="our-cake__cake-type our-cake__cake-type--kids">Детские</p>
+            <p class="our-cake__value-view our-cake__value-view--kids">18 видов</p>
             <picture>
               <source media="(min-width: 1220px)" srcset="img/kid-cake-desktop.png">
               <source media="(min-width: 768px)" srcset="img/kid-cake-tablet.png">
@@ -117,22 +117,23 @@
       <div class="wrapper wrapper--individual-order">
         <h2 class="individual-order__title">Индивидуальный заказ</h2>
         <p class="individual-order__subtitle">Соберите торт в 3 шага</p>
-        <div class="individual-order__stuffing">
-          <h3>Выберите начинку</h3>
-          <p>Шоколадный ганаш</p>
-          <p>Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных
+
+        <div class="individual-order__stuffing-block">
+          <h3 class="individual-order__stuffing-title">Выберите начинку</h3>
+          <img src="/img/stuffing.png" width="241" height="113">
+          <p class="individual-order__stuffing-subtitle">Шоколадный ганаш</p>
+          <p class="individual-order__stuffing-description">Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных
             десертов!</p>
-          <p>1000 руб/кг</p>
-          <button>Выбрать</button>
+          <p class="individual-order__stuffing-price">1000 руб/кг</p>
+          <button class="individual-order__stuffing-button">Выбрать</button>
         </div>
 
-        <div class="individual-order__stuffing">
-          <h3>Выберите начинку</h3>
-          <p>Шоколадный ганаш</p>
-          <p>Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных
-            десертов!</p>
-          <p>1000 руб/кг</p>
-          <button>Выбрать</button>
+        <div class="individual-order__size-block">
+          <h3 class="individual-order__size-title">Размер</h3>
+          <img src="/img/cirle-small.png" width="110" height="110">
+          <p class="individual-order__size-diameter">17-18 см</p>
+          <p class="individual-order__size-portion">(1 кг - 6 персон)</p>
+          <button class="individual-order__size-button">Выбрать</button>
         </div>
 
         <div class="individual-order__stuffing individual-order__stuffing--last">
@@ -255,7 +256,8 @@
         </ul>
         <h2 class="care__title">Забота о клиентах</h2>
         <p class="care__subtitle">Для нас важно</p>
-        <p class="care__description">Нам важно, чтобы каждый торт был безупречным, как внутри, так и снаружи, чтобы он был создан ислючительно для
+        <p class="care__description">Нам важно, чтобы каждый торт был безупречным, как внутри, так и снаружи, чтобы он
+          был создан ислючительно для
           вас и для вашего события.</p>
       </div>
     </section>
@@ -263,91 +265,121 @@
 
     <section class="how-to-order">
       <div class="wrapper wrapper--how-to-order">
-      <h2 class="how-to-order__title">Как заказать</h2>
-      <ol class="how-to-order-list">
-        <li class="how-to-order-list__item how-to-order-list__item--term">
-          <h3 class="how-to-order-list__title">Срок заказа</h3>
-          <p class="how-to-order-list__description">Размещать заказы желательно за <br>2-3 дня. На выходных заказы лучше размещать минимум за неделю.</p>
-        </li>
-        <li class="how-to-order-list__item how-to-order-list__item--delivery-city">
-          <h3 class="how-to-order-list__title">Доставка по городу</h3>
-          <p class="how-to-order-list__description">Доставка в пределах города 200 рублей, при заказазе на сумму более 2000 доставка бесплатно.</p>
-        </li>
-        <li class="how-to-order-list__item how-to-order-list__item--delivery-countryside">
-          <h3 class="how-to-order-list__title">Доставка за городом</h3>
-          <p class="how-to-order-list__description">Доставка за пределами города рассчитывается индивидуально.</p>
-        </li>
-      </ol>
-    </div>
+        <h2 class="how-to-order__title">Как заказать</h2>
+        <ol class="how-to-order-list">
+          <li class="how-to-order-list__item how-to-order-list__item--term">
+            <h3 class="how-to-order-list__title">Срок заказа</h3>
+            <p class="how-to-order-list__description">Размещать заказы желательно за <br>2-3 дня. На выходных заказы
+              лучше размещать минимум за неделю.</p>
+          </li>
+          <li class="how-to-order-list__item how-to-order-list__item--delivery-city">
+            <h3 class="how-to-order-list__title">Доставка по городу</h3>
+            <p class="how-to-order-list__description">Доставка в пределах города 200 рублей, при заказазе на сумму более
+              2000 доставка бесплатно.</p>
+          </li>
+          <li class="how-to-order-list__item how-to-order-list__item--delivery-countryside">
+            <h3 class="how-to-order-list__title">Доставка за городом</h3>
+            <p class="how-to-order-list__description">Доставка за пределами города рассчитывается индивидуально.</p>
+          </li>
+        </ol>
+      </div>
     </section>
 
     <section class="contacts">
       <div class="wrapper wrapper--contacts">
-      <h2 class="contacts__title">Контакты</h2>
-      <p class="contacts__subtitle">Остались вопросы?</p>
+      <div class="contacts__form-block">
+        <h2 class="contacts__title">Контакты</h2>
+        <p class="contacts__subtitle">Остались вопросы?</p>
 
-      <form class="contacts-form">
-        <p class="contacts-form__form-description">Заполните форму ниже и наш кондитер свяжется с Вами</p>
-        <input placeholder="Ваше имя" type="text">
-        <input placeholder="Email адрес" type="email">
-        <textarea placeholder="Ваш вопрос"></textarea>
-        <button type="submit">Отправить</button>
-      </form>
-
-
-      <p>Или позвоните по телефону:<br>
-        <a href="tel:+79068999296">+7 906 899 92 96</a>
-      </p>
-      <p>Наша почта: bakerybypavel@mail.ru</p>
-      <p>Мы в соц. сетях:</p>
-      <ul>
-        <li></li>
-        <li></li>
-      </ul>
+        <form class="contacts-form">
+          <p class="contacts-form__form-description">Заполните форму ниже и наш кондитер свяжется с Вами</p>
+          <input placeholder="Ваше имя" type="text">
+          <input placeholder="Email адрес" type="email">
+          <textarea placeholder="Ваш вопрос"></textarea>
+          <button type="submit">Отправить</button>
+        </form>
+      </div>
+      <div class="contacts__info-block">
+        <p class="contacts__phone">Или позвоните по телефону:<br>
+          <a href="tel:+79068999296">+7 906 899 92 96</a>
+        </p>
+        <p class="contacts__email">Наша почта:
+          <a href="mailto::bakerybypavel@mail.ru"> bakerybypavel@mail.ru</a>
+        </p>
+        <p class="contacts__social">Мы в соц. сетях:</p>
+        <ul class="contacts__social-list">
+          <li class="contacts__social-item contacts__social-item--instagram"></li>
+          <li class="contacts__social-item contacts__social-item--vk"></li>
+        </ul>
+        </div>
       </div>
     </section>
 
 
   </main>
-<!--
+
   <footer>
+    <div class="wrapper wrapper--footer">
+      <div class="footer__first-line">
     <a>
-      <img>
+      <picture>
+        <source media="(min-width: 1220px)" srcset="img/footer-logo-desktop.png">
+        <source media="(min-width: 768px)" srcset="img/footer-logo-tablet.png">
+      <img class="footer__logo" src="img/footer-logo.png" alt="Логотип Cat Energy">
+      </picture>
     </a>
 
-    <ul>
-      <li><a>Наши торты</a></li>
-      <li><a>Индивидуальный заказ</a></li>
-      <li><a>Отзывы</a></li>
-      <li><a>О нас</a></li>
-      <li><a>Как заказать</a></li>
-      <li><a>Контакты</a></li>
+    <ul class="footer-navigation">
+      <li class="footer-navigation__item"><a href="#" class="footer-navigation__link">Наши торты</a></li>
+      <li class="footer-navigation__item"><a href="#" class="footer-navigation__link">Индивидуальный заказ</a></li>
+      <li class="footer-navigation__item"><a href="#" class="footer-navigation__link">Отзывы</a></li>
+      <li class="footer-navigation__item"><a href="#" class="footer-navigation__link">О нас</a></li>
+      <li class="footer-navigation__item"><a href="#" class="footer-navigation__link">Как заказать</a></li>
+      <li class="footer-navigation__item"><a href="#" class="footer-navigation__link">Контакты</a></li>
     </ul>
-    <a href="tel:+79068999296">+7 906 899 92 96</a>
+    <a class="footer__phone" href="tel:+79068999296">+7 906 899 92 96</a>
+  </div>
+  <div class="footer__second-line">
+    <ul class="footer__social-list">
+      <li class="footer__social-item footer__social-item--instagram">
+        <svg viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="24px"  height="24px">
+          <path d="M6.6571 0C2.98565 0 0 3.12481 0 6.96524V17.0365C0 20.8769 2.98565 24 6.6571
+          24H16.3429C20.0143 24 23 20.8769 23 17.0365V6.96524C23 3.12481 20.0143 0 16.3429 0H6.6571ZM6.6571
+          2.06322H16.3429C18.9559 2.06322 21.0292 4.23197 21.0292 6.96524V17.0365C21.0292 19.7698 18.9559 21.9368 16.3429
+          21.9368H6.6571C4.04408 21.9368 1.97241 19.7698 1.97241 17.0365V6.96524C1.97241 4.23197 4.04408 2.06322 6.6571
+          2.06322ZM17.6727 4.12641C16.9107 4.12641 16.2934 4.77212 16.2934 5.56909C16.2934 6.36609 16.9107 7.01178 17.6727 7.01178C18.4346
+          7.01178 19.0519 6.36609 19.0519 5.56909C19.0519 4.77212 18.4346 4.12641 17.6727
+          4.12641ZM11.5 5.82073C8.24893 5.82073 5.59264 8.5993 5.59264 12C5.59264 15.4007 8.24893 18.1793
+          11.5 18.1793C14.7511 18.1793 17.409 15.4007 17.409 12C17.409 8.5993 14.7511 5.82073 11.5
+          5.82073ZM11.5 7.88395C13.6853 7.88395 15.4366 9.71415 15.4366 12C15.4366 14.2859 13.6853 16.1161 11.5
+          16.1161C9.31472 16.1161 7.56504 14.2859 7.56504 12C7.56504 9.71415 9.31472 7.88395 11.5 7.88395Z" fill="#b5b5b5"/>
+          </svg>
+      </li>
+      <li class="footer__social-item footer__social-item--vk">
+        <svg id="regular" width="32px" height="32px" enable-background="new 0 0 24 24"  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#b5b5b5" d="m12.145 19.5c3.472 0 2.234-2.198 2.502-2.83-.004-.472-.008-.926.008-1.202.22.062.739.325 1.811 1.367 1.655 1.67 2.078 2.665 3.415 2.665h2.461c.78 0 1.186-.323 1.389-.594.196-.262.388-.722.178-1.438-.549-1.724-3.751-4.701-3.95-5.015.03-.058.078-.135.103-.175h-.002c.632-.835 3.044-4.449 3.399-5.895.001-.002.002-.005.002-.008.192-.66.016-1.088-.166-1.33-.274-.362-.71-.545-1.299-.545h-2.461c-.824 0-1.449.415-1.765 1.172-.529 1.345-2.015 4.111-3.129 5.09-.034-1.387-.011-2.446.007-3.233.036-1.535.152-3.029-1.441-3.029h-3.868c-.998 0-1.953 1.09-.919 2.384.904 1.134.325 1.766.52 4.912-.76-.815-2.112-3.016-3.068-5.829-.268-.761-.674-1.466-1.817-1.466h-2.461c-.998 0-1.594.544-1.594 1.455 0 2.046 4.529 13.544 12.145 13.544zm-8.09-13.499c.217 0 .239 0 .4.457.979 2.883 3.175 7.149 4.779 7.149 1.205 0 1.205-1.235 1.205-1.7l-.001-3.702c-.066-1.225-.512-1.835-.805-2.205l3.508.004c.002.017-.02 4.095.01 5.083 0 1.403 1.114 2.207 2.853.447 1.835-2.071 3.104-5.167 3.155-5.293.075-.18.14-.241.376-.241h2.461.01c-.001.003-.001.006-.002.009-.225 1.05-2.446 4.396-3.189 5.435-.012.016-.023.033-.034.05-.327.534-.593 1.124.045 1.954h.001c.058.07.209.234.429.462.684.706 3.03 3.12 3.238 4.08-.138.022-.288.006-2.613.011-.495 0-.882-.74-2.359-2.23-1.328-1.292-2.19-1.82-2.975-1.82-1.524 0-1.413 1.237-1.399 2.733.005 1.622-.005 1.109.006 1.211-.089.035-.344.105-1.009.105-6.345 0-10.477-10.071-10.636-11.996.055-.005.812-.002 2.546-.003z"/></svg>
 
-    <ul>
-      <li></li>
-      <li></li>
+      </li>
     </ul>
+    <p class="footer__copyright">© 2018 Cakes</p>
+  </div>
+</div>
+  </footer>
+  <script>
+    var navMain = document.querySelector('.main-navigation');
+    var navToggle = document.querySelector('.main-navigation__toggle');
 
-    <p>© 2018 Cakes</p>
+    navMain.classList.remove('main-navigation--nojs');
 
-  </footer>-->
-    <script>
-      var navMain = document.querySelector('.main-navigation');
-      var navToggle = document.querySelector('.main-navigation__toggle');
+    navToggle.addEventListener('click', function () {
+      if (navMain.classList.contains('main-navigation--closed')) {
+        navMain.classList.remove('main-navigation--closed');
+        navMain.classList.add('main-navigation__toggle--opened');
+      } else {
+        navMain.classList.add('main-navigation--closed');
+        navMain.classList.remove('main-navigation__toggle--opened');
+      }
+    });
 
-      navMain.classList.remove('main-navigation--nojs');
-
-      navToggle.addEventListener('click', function () {
-        if (navMain.classList.contains('main-navigation--closed')) {
-          navMain.classList.remove('main-navigation--closed');
-          navMain.classList.add('main-navigation__toggle--opened');
-        } else {
-          navMain.classList.add('main-navigation--closed');
-          navMain.classList.remove('main-navigation__toggle--opened');
-        }
-      });
-
-    </script>
+  </script>
 </body>

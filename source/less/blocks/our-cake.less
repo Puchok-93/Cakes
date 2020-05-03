@@ -27,7 +27,7 @@
 .our-cake__cake-type {
   font-family: @circe;
   font-size: 14px;
- position: absolute;
+  position: absolute;
   content: "";
   top: -5px;
   left: 10px;
@@ -43,7 +43,6 @@
 }
 
 @media (min-width: @tablet-width) {
-
   .our-cake__title {
     font-size: 28px;
     line-height: 39px;
@@ -114,20 +113,62 @@
     font-family: @circe;
     font-size: 14px;
     line-height: 43px;
-    position: absolute;
-    content: "";
-    top: 5px;
-    left: 23px;
+    top: -8px;
+    left: 24px;
+
+    &--muss {
+      top: -10px;
+      left: 24px;
+    }
+
+    &--wending {
+      top: -6px;
+      left: 26px;
+    }
+
+    &--man,
+    &--woman {
+      top: 0;
+      left: 24px;
+    }
+
+    &--kids {
+      top: 0;
+      left: 30px;
+    }
   }
 
   .our-cake__value-view {
     font-family: @circe;
     font-size: 12px;
     line-height: 43px;
-    position: absolute;
-    content: "";
-    top: 20px;
+    top: 10px;
     left: 26px;
+
+    &--muss {
+      top: 8px;
+      left: 26px;
+    }
+
+    &--wending {
+      top: 10px;
+      left: 26px;
+    }
+
+    &--man {
+      top: 16px;
+      left: 26px;
+    }
+
+    &--woman {
+      top: 18px;
+      left: 26px;
+    }
+
+    &--kids {
+      top: 18px;
+      left: 30px;
+    }
   }
 }
 
@@ -177,6 +218,7 @@
       right: -413px;
     }
   }
+
   .our-cake-list__item--classic {
     &::before {
       font-size: 20px;
@@ -193,15 +235,65 @@
   .our-cake__cake-type {
     font-size: 24px;
     line-height: 74px;
-    top: -13px;
-    left: 43px;
+    top: -12px;
+    left: 44px;
+
+    &--muss {
+      top: -17px;
+      left: 48px;
+    }
+
+    &--wending {
+      top: -14px;
+      left: 48px;
+    }
+
+    &--man {
+      top: -12px;
+      left: 44px;
+    }
+
+    &--woman {
+      top: -13px;
+      left: 45px;
+    }
+
+    &--kids {
+      top: -11px;
+      left: 45px;
+    }
   }
 
   .our-cake__value-view {
     font-size: 20px;
     line-height: 73px;
-    top: 15px;
-    left: 43px;
+    top: 19px;
+    left: 45px;
+
+    &--muss {
+      top: 14px;
+      left: 49px;
+    }
+
+    &--wending {
+      top: 14px;
+      left: 49px;
+    }
+
+    &--man {
+      top: 18px;
+      left: 47px;
+    }
+
+    &--woman {
+      top: 18px;
+      left: 47px;
+    }
+
+    &--kids {
+      top: 20px;
+      left: 45px;
+    }
   }
 }
 

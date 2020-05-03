@@ -1,3 +1,7 @@
+.contacts {
+  margin-bottom: 50px;
+}
+
 .contacts__title {
     font-family: @playfairdisplay;
   font-size: 24px;
@@ -82,4 +86,116 @@ textarea::placeholder {
   margin-top: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.contacts__phone {
+  font-family: @circe;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  color: #000000;
+
+  margin: 0;
+  margin-top: 27px;
+}
+
+.contacts__phone a {
+  display: block;
+  font-family: @circe;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  color: #000000;
+  text-decoration: none;
+
+  margin: 0;
+  margin-top: -4px;
+}
+
+.contacts__email {
+  font-family: @circe;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  color: #000000;
+
+  margin: 0;
+  margin-top: 14px;
+}
+
+.contacts__email a {
+  font-family: @circe;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  color: #000000;
+  text-decoration: none;
+  margin: 0;
+}
+
+.contacts__social {
+  font-family: @circe;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  color: #000000;
+
+  margin: 0;
+  margin-top: 13px;
+}
+
+.contacts__social-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  margin-top: 10px;
+}
+
+.contacts__social-item {
+  width: 63px;
+  height: 63px;
+  background-color: @white;
+  border-radius: 50%;
+
+  margin-right: 30px;
+
+  position: relative;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--instagram::before {
+    position: absolute;
+    content: "";
+    width: 34px;
+    height: 33px;
+    top: 16px;
+    left: 17px;
+    background-image: url("/img/icon-instagram.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--vk::before {
+    position: absolute;
+    content: "";
+    width: 42px;
+    height: 42px;
+    top: 11px;
+    left: 12px;
+    background-image: url("/img/icon-vk.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__form-block {
+    outline: 1px solid green;
+  }
+
+  .contacts__info-block {
+    outline: 1px solid blue;
+  }
 }

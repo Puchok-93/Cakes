@@ -3,19 +3,19 @@
 }
 
 .individual-order__title {
-  width: 200px;
+  width: 90%;
   font-family: @playfairdisplay;
   font-size: 24px;
   font-weight: bold;
-  line-height: 1;
+  line-height: 29px;
   text-align: center;
 
   margin: 0;
   padding: 0;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 17px;
-  padding-top: 44px;
+  margin-bottom: 8px;
+  padding-top: 42px;
 }
 
 .individual-order__subtitle {
@@ -24,23 +24,156 @@
   font-weight: bold;
   line-height: 1;
   text-align: center;
+  letter-spacing: -0.4px;
 
   margin: 0;
-  margin-bottom: 18px;
   padding: 0;
+  margin-bottom: 18px;
 }
 
-.individual-order__stuffing {
+.individual-order__stuffing-block,
+.individual-order__size-block {
   background-color: @white;
+  width: 100%;
   margin-bottom: 10px;
   min-height: 430px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   &--last {
     margin-bottom: 0;
   }
 }
 
+.individual-order__stuffing-title,
+.individual-order__size-title {
+  font-family: @playfairdisplay;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 12px;
+  color: @red;
+
+  margin: 0;
+  margin-top: 24px;
+  margin-bottom: 21px;
+}
+
+.individual-order__size-title {
+  margin-left: -100px;
+  margin-bottom: 50px;
+}
+
+.individual-order__stuffing-subtitle {
+  font-family: @circe;
+  font-size: 16px;
+  font-weight: bold;
+  color: #2f2f2f;
+
+  margin: 0;
+  margin-top: 35px;
+  margin-left: -100px;
+}
+
+.individual-order__stuffing-description {
+  width: 90%;
+  font-family: @circe;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: normal;
+  color: #2f2f2f;
+
+  margin: 0;
+  margin-top: 2px;
+  margin-left: 10px;
+}
+
+.individual-order__stuffing-price {
+  font-family: @playfairdisplay;
+  font-size: 18px;
+  font-weight: bold;
+  color: #2f2f2f;
+
+  margin: 0;
+  margin-top: 10px;
+}
+
+.individual-order__size-diameter {
+  font-family: @circe;
+  font-size: 14px;
+  font-weight: normal;
+  color: #2f2f2f;
+
+  margin: 0;
+  margin-top: 65px;
+}
+
+.individual-order__size-portion {
+  font-family: @circe;
+  font-size: 14px;
+  font-weight: normal;
+  color: #2f2f2f;
+
+  margin: 0;
+}
+
+.individual-order__stuffing-button,
+.individual-order__size-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 63.5%;
+  height: 51px;
+
+  font-family: @circe;
+  font-size: 13px;
+  line-height: 1;
+  text-transform: uppercase;
+
+  color: @white;
+  background-color: @red;
+
+  border: none;
+  border-radius: 25px;
+
+  margin-top: 22px;
+}
+
+.individual-order__size-button {
+  margin-top: 53px;
+}
+
 .test {
   background-color: red;
   min-height: 370px;
+}
+
+@media (min-width: @tablet-width) {
+  .individual-order__title {
+    width: 100%;
+    font-size: 28px;
+    line-height: 60px;
+
+    margin-bottom: 0;
+    padding-top: 41px;
+  }
+
+
+.individual-order__subtitle {
+  font-family: @introscript;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+
+  margin: 0;
+  margin-top: -3px;
+  margin-bottom: 30px;
+  }
+
+  .individual-order__stuffing {
+    margin-bottom: 20px;
+    min-height: 350px;
+  }
 }
